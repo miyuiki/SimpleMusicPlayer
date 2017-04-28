@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jay.simplemusicplayer.MainActivity">
+    tools:context="com.example.jay.simplemusicplayer.MainActivity"
+    android:background="@drawable/bg">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,17 +23,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="點歌："
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/background_light"
                 android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center_horizontal"
                 android:text="請輸入歌曲號碼"
                 android:textAlignment="textStart"
-                android:textSize="18sp"
-                android:gravity="center_horizontal"/>
+                android:textColor="@android:color/darker_gray"
+                android:textSize="36sp" />
         </LinearLayout>
 
         <TableLayout
@@ -128,7 +130,7 @@
                     android:text="C" />
 
                 <Button
-                    android:id="@+id/button11"
+                    android:id="@+id/button0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0" />
