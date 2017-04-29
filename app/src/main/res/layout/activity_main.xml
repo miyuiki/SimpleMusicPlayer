@@ -32,7 +32,6 @@
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:text="請輸入歌曲號碼"
-                android:textAlignment="textStart"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="36sp" />
         </LinearLayout>
@@ -52,19 +51,28 @@
                     android:id="@+id/button1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1" />
+                    android:background="@drawable/button_style"
+                    android:elevation="1dp"
+                    android:text="1"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginRight="4dp" />
 
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2" />
+                    android:background="@drawable/button_style"
+                    android:text="2"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginRight="4dp" />
 
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3" />
+                    android:background="@drawable/button_style"
+                    android:text="3"
+                    android:textColor="@android:color/background_light" />
             </TableRow>
 
             <TableRow
@@ -76,19 +84,27 @@
                     android:id="@+id/button4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4" />
+                    android:background="@drawable/button_style"
+                    android:text="4"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginRight="4dp" />
 
                 <Button
                     android:id="@+id/button5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5" />
+                    android:background="@drawable/button_style"
+                    android:text="5"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginRight="4dp" />
 
                 <Button
                     android:id="@+id/button6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="6" />
+                    android:background="@drawable/button_style"
+                    android:text="6"
+                    android:textColor="@android:color/background_light" />
             </TableRow>
 
             <TableRow
@@ -100,22 +116,28 @@
                     android:id="@+id/button7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="7" />
+                    android:background="@drawable/button_style"
+                    android:text="7"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginRight="4dp" />
 
                 <Button
                     android:id="@+id/button8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/button_style"
                     android:text="8"
-                    android:textSize="18sp"
-                    />
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp"
+                    android:layout_marginRight="4dp" />
 
                 <Button
                     android:id="@+id/button9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/button_style"
                     android:text="9"
-                    />
+                    android:textColor="@android:color/background_light" />
             </TableRow>
 
             <TableRow
@@ -127,19 +149,28 @@
                     android:id="@+id/button10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C" />
+                    android:text="C"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/button_style"
+                    />
 
                 <Button
                     android:id="@+id/button0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0" />
+                    android:text="0"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/button_style"/>
 
                 <Button
                     android:id="@+id/button12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="delete" />
+                    android:text="delete"
+                    android:textColor="@android:color/background_light"
+                    android:background="@drawable/button_style"/>
             </TableRow>
 
         </TableLayout>
@@ -157,13 +188,18 @@
                     android:id="@+id/button13"
                     android:layout_width="wrap_content"
                     android:layout_height="60sp"
-                    android:text="LIST" />
+                    android:text="LIST"
+                    android:textColor="@android:color/background_light"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/button_style"/>
 
                 <Button
                     android:id="@+id/button14"
                     android:layout_width="wrap_content"
                     android:layout_height="60sp"
-                    android:text="ENTER" />
+                    android:text="ENTER"
+                    android:textColor="@android:color/background_light"
+                    android:background="@drawable/button_style"/>
             </TableRow>
 
         </TableLayout>

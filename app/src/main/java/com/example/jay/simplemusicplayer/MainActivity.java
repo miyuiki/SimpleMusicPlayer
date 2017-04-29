@@ -55,9 +55,37 @@ public class MainActivity extends AppCompatActivity {
     private Button.OnClickListener toPage2Listener = new Button.OnClickListener(){
         @Override
         public void onClick(View v) {
+            String str = songNum.getText().toString();
             Intent intent = new Intent();
             intent.setClass(MainActivity.this,Second.class);
-            startActivity(intent);
+
+            if (str.equals("請輸入歌曲號碼") || str.equals("")){
+                new AlertDialog.Builder(MainActivity.this)
+                        .setTitle("警告")
+                        .setMessage("請輸入歌曲號碼")
+                        .setPositiveButton("朕知道了", new
+                                DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {}
+                                })
+                        .show();
+            }
+            else if(Integer.parseInt(str) > 5 || Integer.parseInt(str) < 1){
+                new AlertDialog.Builder(MainActivity.this)
+                        .setTitle("警告")
+                        .setMessage("沒有這首歌哦")
+                        .setPositiveButton("朕知道了", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {}
+                        })
+                        .show();
+            }
+            else{
+                Bundle bundle = new Bundle();
+                bundle.putString("NUMBER", str);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
         }
     };
 
@@ -99,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             new AlertDialog.Builder(MainActivity.this)
                     .setTitle("歌曲清單")
-                    .setMessage("1.\n2.\n3.\n4.\n5.\n6.\n7.\n8.\n9.\n10. ")
+                    .setMessage("01.編織星空的人\n02.旅行的意義\n03.面對明日的勇氣\n04.恋\n05.ヒカリヘ")
                     .setPositiveButton("朕知道了", new
                             DialogInterface.OnClickListener() {
                                 @Override
