@@ -27,6 +27,7 @@ DELETE則是退後一格
 
 <img src="https://github.com/miyuiki/SimpleMusicPlayer/blob/master/screenshot/Screenshot_1493481671.png?raw=true" width = "360" height = "640" align=center />
 
+* 歌詞頁面
 按下ENTER後跳至歌詞頁面
 
 <img src="https://github.com/miyuiki/SimpleMusicPlayer/blob/master/screenshot/Screenshot_1493481701.png?raw=true" width = "360" height = "640" align=center />
@@ -36,3 +37,5 @@ DELETE則是退後一格
 <img src="https://raw.githubusercontent.com/miyuiki/SimpleMusicPlayer/master/screenshot/Screenshot_1493481718.png" width = "360" height = "640" align=center />
 
 <img src="https://raw.githubusercontent.com/miyuiki/SimpleMusicPlayer/master/screenshot/Screenshot_1493481725.png" width = "360" height = "640" align=center />
+
+另外COVER和LYRICS按鈕尚未實作，目前沒有功能><
