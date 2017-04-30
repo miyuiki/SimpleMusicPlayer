@@ -1,12 +1,12 @@
-#點歌+歌詞查詢程式
-##實作功能
+# 點歌+歌詞查詢程式
+## 實作功能
 * 使用Intent在activity間轉換
 * 透明化設計Button元件及按下特效
 * 模糊背景
 * 歌詞圖片使用透明png
 * 可捲動的layout
 
-##程式截圖與說明
+## 程式截圖與說明
 
 * 程式初始畫面
 
@@ -27,8 +27,11 @@ DELETE則是退後一格
 
 <img src="https://github.com/miyuiki/SimpleMusicPlayer/blob/master/screenshot/Screenshot_1493481671.png?raw=true" width = "360" height = "640" align=center />
 
+按下ENTER後跳至歌詞頁面
 
 <img src="https://github.com/miyuiki/SimpleMusicPlayer/blob/master/screenshot/Screenshot_1493481701.png?raw=true" width = "360" height = "640" align=center />
+
+按下下一曲或上一曲皆可換歌
 
 <img src="https://raw.githubusercontent.com/miyuiki/SimpleMusicPlayer/master/screenshot/Screenshot_1493481718.png" width = "360" height = "640" align=center />
 
