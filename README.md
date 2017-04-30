@@ -38,4 +38,5 @@ DELETE則是退後一格
 
 <img src="https://raw.githubusercontent.com/miyuiki/SimpleMusicPlayer/master/screenshot/Screenshot_1493481725.png" width = "360" height = "640" align=center />
 
+按下HOME則會關閉此activity跳回輸入號碼的畫面
 另外COVER和LYRICS按鈕尚未實作，目前沒有功能><
