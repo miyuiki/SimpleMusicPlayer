@@ -26,7 +26,6 @@ public class Second extends AppCompatActivity{
 
     int p = 0;
     int len = imgID.length;
-    int songlen = songfile.length;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +48,7 @@ public class Second extends AppCompatActivity{
         Bundle bundle = intent.getExtras();
         String num = bundle.getString("NUMBER");
         photo.setImageResource(imgID[Integer.parseInt(num)-1]);
+        p = Integer.parseInt(num)-1;
         current = Integer.parseInt(num)-1;
         music = null;
 
@@ -58,7 +58,7 @@ public class Second extends AppCompatActivity{
 
     private void nextSong(){
         current++;
-        if (current == songlen){
+        if (current == len){
             current = 0;
         }
     }
@@ -85,26 +85,61 @@ public class Second extends AppCompatActivity{
         @Override
         public void onClick(View v) {
             finish();
+            music.stop();
         }
     };
     private Button.OnClickListener preListener = new Button.OnClickListener(){
         @Override
         public void onClick(View view) {
             p--;
+            current--;
             if (p < 0){
                 p = len - 1;
             }
             photo.setImageResource(imgID[p]);
+
+            if (current < 0){
+                current = len - 1;
+                if (music != null) {
+                    music.reset();
+                    music = null;
+                }
+                playSong(songfile[current]);
+            }
+            else {
+                if (music != null) {
+                    music.reset();
+                    music = null;
+                }
+                playSong(songfile[current]);
+            }
         }
     };
     private Button.OnClickListener nextListener = new Button.OnClickListener(){
         @Override
         public void onClick(View view) {
             p++;
+            current++;
             if (p == len){
                 p = 0;
             }
             photo.setImageResource(imgID[p]);
+
+            if (current == len){
+                current = 0;
+                if (music != null) {
+                    music.reset();
+                    music = null;
+                }
+                playSong(songfile[current]);
+            }
+            else {
+                if (music != null) {
+                    music.reset();
+                    music = null;
+                }
+                playSong(songfile[current]);
+            }
         }
     };
     private Button.OnClickListener playListener = new Button.OnClickListener(){

@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent login_intent = new Intent();
+        login_intent.setClass(MainActivity.this,Login.class);
+        startActivity(login_intent);
+
         songNum = (TextView) findViewById(R.id.textView2);
         toPage2 = (Button) findViewById(R.id.button14);
         b1 = (Button) findViewById(R.id.button1);
