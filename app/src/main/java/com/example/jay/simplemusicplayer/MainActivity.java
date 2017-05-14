@@ -21,10 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent login_intent = new Intent();
-        login_intent.setClass(MainActivity.this,Login.class);
-        startActivity(login_intent);
-
         songNum = (TextView) findViewById(R.id.textView2);
         toPage2 = (Button) findViewById(R.id.button14);
         b1 = (Button) findViewById(R.id.button1);
@@ -131,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             new AlertDialog.Builder(MainActivity.this)
                     .setTitle("歌曲清單")
-                    .setMessage("01.編織星空的人\n02.旅行的意義\n03.面對明日的勇氣\n04.恋\n05.ヒカリヘ")
+                    .setMessage("01.編織星空的人\n02.旅行的意義\n03.面對明日的勇氣\n04.初恋\n05.ヒカリヘ")
                     .setPositiveButton("朕知道了", new
                             DialogInterface.OnClickListener() {
                                 @Override

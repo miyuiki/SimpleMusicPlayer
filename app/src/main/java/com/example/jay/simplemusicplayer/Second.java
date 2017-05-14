@@ -6,17 +6,14 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import java.io.IOException;
 
 
 public class Second extends AppCompatActivity{
 
     private MediaPlayer music;
-    private Boolean ispause = false;
     int[] songfile = new int[] {R.raw.m01,R.raw.m02,R.raw.m03,R.raw.m04,R.raw.m05};
     int current = 0;
     int[] imgID = {R.drawable.img01, R.drawable.img02, R.drawable.img03, R.drawable.img04, R.drawable.img05};
@@ -77,7 +74,6 @@ public class Second extends AppCompatActivity{
                 nextSong();
             }
         });
-        ispause = false;
     }
 
 
